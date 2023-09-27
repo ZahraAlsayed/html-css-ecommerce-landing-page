@@ -8,12 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="This is webpage For selling electronic devices">
   <meta name="keywords" content="electronic devices phone cam ">
-  
+  <link rel="stylesheet" href="src/styles/style.css">
   <title>ECHO TECH WEBSITE </title>
 </head>
 <body>
   <header>
-    <nav>
+    <div>
+    <nav role="navigation" aria-label="Customer service">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Products</a></li>
@@ -23,33 +24,38 @@
         </ul>
     </nav>
     <div class="logo">
-        <img src="logo.png" alt="Website Logo">
+        <a href="#"><img src="logo.png" alt="ECHO TECH"></a>
     </div>
+</div>
 </header>
 
+<main>
+
 <section class="hero">
+    <div id="hero-section">
     <h1>Welcome to ECHO-TEC Electronic Devices store</h1>
     <p>Discover the best products at amazing prices.</p>
     <button>Shop Now</button>
+    </div>
 </section>
 
 <section class="products">
   <div class="product1">
-    <img src="https://www.jarir.com/cdn-cgi/image/fit=contain,width=380,height=auto,quality=85,metadata=none/https://ak-asset.jarir.com/akeneo-prod/asset/3/c/9/2/3c92cf0fefcd1abf3f6443ec6f07fca34108c86e_606976.jpg" alt="phone" style="width:10%">
+    <img src="https://www.jarir.com/cdn-cgi/image/fit=contain,width=380,height=auto,quality=85,metadata=none/https://ak-asset.jarir.com/akeneo-prod/asset/3/c/9/2/3c92cf0fefcd1abf3f6443ec6f07fca34108c86e_606976.jpg" alt="phone" style="width:20%">
     <h1>Galaxy S32 Ultra</h1>
     <p class="price">500RS</p>
     <p>Product discribtion..</p>
     <p><button>Add to Cart</button></p>
   </div>
   <div class="product1">
-    <img src="https://www.jarir.com/cdn-cgi/image/fit=contain,width=380,height=auto,quality=85,metadata=none/https://ak-asset.jarir.com/akeneo-prod/asset/8/2/3/2/8232dac95788d5ee003a6168d79389aa15c543d4_617563.jpg" alt="Smart TV" style="width:10%">
+    <img src="https://www.jarir.com/cdn-cgi/image/fit=contain,width=380,height=auto,quality=85,metadata=none/https://ak-asset.jarir.com/akeneo-prod/asset/8/2/3/2/8232dac95788d5ee003a6168d79389aa15c543d4_617563.jpg" alt="Smart TV" style="width:20%">
     <h1>Samsung 65" Smart TV/h1>
     <p class="price">1000RS</p>
     <p>Product discribtion..</p>
     <p><button>Add to Cart</button></p>
   </div>
   <div class="product1">
-    <img src="https://www.jarir.com/cdn-cgi/image/fit=contain,width=380,height=auto,quality=85,metadata=none/https://ak-asset.jarir.com/akeneo-prod/asset/2/6/1/b/261b1b6299869615fcefb4b2a439781878d7ded1_576866.jpg" alt="Cam" style="width:10%">
+    <img src="https://www.jarir.com/cdn-cgi/image/fit=contain,width=380,height=auto,quality=85,metadata=none/https://ak-asset.jarir.com/akeneo-prod/asset/2/6/1/b/261b1b6299869615fcefb4b2a439781878d7ded1_576866.jpg" alt="Cam" style="width:20%">
     <h1>WiFI Cam</h1>
     <p class="price">700RS</p>
     <p>Product discribtion..</p>
@@ -67,16 +73,16 @@
 </section>
 
 <section class="newsletter">
-    <h2>Subscribe to Our Newsletter</h2>
+    <h2 id="Subscribe">Subscribe to Our Newsletter</h2>
     <form action="#" method="post">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
         <button type="submit">Subscribe</button>
     </form>
 </section>
-
+</main>
 <footer>
-    <nav>
+    <nav id="footer-nav" aria-label="Main">
         <ul>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms of Service</a></li>
