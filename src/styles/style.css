@@ -154,31 +154,6 @@ a:hover{
         color: white;
 }
 
-footer {
-    
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    padding: 10px 0;
-    bottom: 0;
-    z-index: 999;
-}
-
-
-.social-media {
-    text-align: center;
-}
-
-.social-media .icon {
-    padding: 10px;
-    margin: 10px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-}
-.contact-info{
-    text-align: center;
-    
-}
 .reviews-sec p{
     margin: 20px;
     padding: 10px;
@@ -258,3 +233,65 @@ footer {
     border-radius: 5px;
     cursor: pointer;
 }
+.footer {
+    position: relative;
+    width: 100%;
+    background: #ffffff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .menu__item {
+    list-style: none;
+  }
+ 
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #010101;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #161616;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  i{
+     font-size: 2rem;
+    color: #040404;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+
+
+  } 
+  i:hover {
+    transform: translateY(-10px);
+  }
+ 
+
+  
