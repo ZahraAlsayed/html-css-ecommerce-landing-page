@@ -1,13 +1,98 @@
-// src/styles/style.scss
-
-$primary-color: #3498db;
-
-body {
-  font-family: Arial, sans-serif;
+* Reset default margin and padding */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
 }
 
-.header {
-  background-color: $primary-color;
-  color: white;
-  padding: 1rem;
+/* Set a background color and font family for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+/* Style the logo */
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    bottom: 0;
+    z-index: 999;
+}
+
+/* Style the social media icons */
+.social-media {
+    text-align: center;
+}
+
+.social-media .icon {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+/* Create a responsive layout using Flexbox */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.product1 {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    text-align: center;
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .products {
+        flex-direction: column;
+    }
+
+    .product1 {
+        width: 100%;
+    }
+}
+
+/* Add CSS animations or transitions as needed */
+button, .icon {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+button:hover, .icon:hover {
+    background-color: #555;
+    color: white;
 }
